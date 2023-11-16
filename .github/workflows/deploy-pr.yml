@@ -45,10 +45,10 @@ jobs:
     needs: build-and-push-image
     runs-on: ubutnu-latest
     steps:
-      - name: Checkout nakamasato/kubernetes-basics
+      - name: Checkout shu-kob/kubernetes-basics
         uses: actions/checkout@v2
         with:
-          repository: nakamasato/kubernetes-basics
+          repository: shu-kob/kubernetes-basics
           ref: v2.0-rc
       - name: Update manifest file
         env:
